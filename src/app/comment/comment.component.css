@@ -1,0 +1,26 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    background:grey;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px !important;
+}
+
+.cardPostId{
+    padding-right: 50px;
+    color: #fff;
+}
+
+.cardBody{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+
+
+
+

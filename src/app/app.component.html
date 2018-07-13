@@ -1,0 +1,38 @@
+<!--posts-->
+<div class="page-header">
+    <h1>POSTS</h1>
+</div>
+<div class="container">
+  <div class="row heading">
+      <div class="col-xs-3">
+        <p>ID</p>
+      </div>
+      <div class="col-xs-3">
+          <p>AUTHOR</p>
+      </div>
+      <div class="col-xs-3">
+          <p>TITLE</p>
+      </div>
+      <div class="col-xs-3">
+          <button type="button" (click)="showForm()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+      </div>
+  </div>
+  <div *ngIf="dataIsAvailable">
+    <div *ngFor="let post of posts">
+        <app-post [posts]="post" (event)="receiveClicked($event)"></app-post>
+    </div>
+  </div>
+</div>
+
+<!--comments-->
+<h3>COMMENTS</h3>
+<div *ngFor="let comment of comments">
+    <app-comment [comments]="comment" (event)="receiveClicked($event)"></app-comment>
+</div>
+
+<!--add new post-->
+<app-modal *ngIf=show></app-modal>
+
+
+
+

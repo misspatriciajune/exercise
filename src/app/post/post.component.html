@@ -1,0 +1,18 @@
+<!--displays posts details-->
+<div class="row items">
+ <div class="col-xs-3">
+      {{ posts.id}}
+  </div>
+  <div class="col-xs-3">
+      {{ posts.author}}
+  </div>
+  <div class="col-xs-3">
+      {{ posts.title}}
+  </div>
+  <div class="col-xs-3">
+      <button type="button" (click)="beingClicked()"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+      <button type="button" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+      <button type="button" ><span class="glyphicon glyphicon-erase" aria-hidden="true"></span></button>
+ </div>
+
+</div>

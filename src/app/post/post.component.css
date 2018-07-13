@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+}
+
+.items{
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 200;
+    color: #7c7a7a;
+    padding-top: 0.75em;
+}
+
+button{
+    border: none;
+}
+
+button:hover{
+    border-radius: 20%;
+    border: solid 1px gray;
+    color: #fff;
+    background: gray;
+}
